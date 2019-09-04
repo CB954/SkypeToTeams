@@ -1,6 +1,6 @@
 <#
 .Synopsis
-   This is a powershell module to convert Skype: URL calls to Teams.
+   This powershell script will convert skype: URL calls to Teams.
    This was created to intergrate Teams with ConnectWise Manage.
 .DESCRIPTION
    This script creates/updates the registry keys for skype: URL/Classes and creates a bat file in C:\SkypeToTeams.
