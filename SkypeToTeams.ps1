@@ -1,4 +1,4 @@
-﻿<#
+<#
 .Synopsis
    This is a powershell module to convert Skype: URL calls to Teams.
    This was created to intergrate Teams with ConnectWise Manage.
@@ -10,9 +10,6 @@
    Author:        Chris Brannon
    Creation Date: 8/21/2019
 #>
-
-# Remove Skype; line 14 requires elevate powershell session
-Get-AppxPackage Microsoft.SkypeApp -AllUsers -ErrorAction SilentlyContinue -WarningAction SilentlyContinue | Remove-AppPackage -AllUsers -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
 
 #Create/Modify Reg Keys
 New-Item "HKCU:\Software\Classes\skype\shell\open\command" -Force
