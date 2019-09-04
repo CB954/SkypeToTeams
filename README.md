@@ -14,8 +14,9 @@ Get-AppxPackage Microsoft.SkypeApp -AllUsers -ErrorAction SilentlyContinue -Warn
 ```powershell
 irm https://bit.ly/skypetoteams | iex
 ```
-4. Make sure Tel: is set to Microsoft Teams.
-  <br>- You can check this in powershell ```Start-Process "tel:18000000000"``` 
-  <br>- If this does not open Microsoft Teams then you need to set Teams as the default app. 
-  <br>&nbsp;&nbsp;&nbsp;&nbsp;Windows 10: Settings>Apps>Default Apps>Choose Default Apps by Protocol find tel and set to Teams
-5. Next time a Skype link is called it will convert the call to tel which will open in teams.
+4. Make sure the tel: url is set to Microsoft Teams. You can check this in powershell: 
+```powershell
+Start-Process "tel:18000000000"
+``` 
+^If this does not open Microsoft Teams then you need to set Teams as the default app. 
+<br>**Windows 10:** Settings>Apps>Default Apps>Choose Default Apps by Protocol find tel and set to Teams
