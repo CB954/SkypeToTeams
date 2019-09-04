@@ -6,7 +6,7 @@ The Script creates a bat file in C:\SkypeToTeams. The bat file converts the skyp
 
 # Installation
 1. Open PowerShell.exe as admin.
-2. Run ```irm https://bit.ly/skypetoteams | iex```
+2. As the logged in user Run ```irm https://bit.ly/skypetoteams | iex```
 3. Make sure Tel: is set to Microsoft Teams.
   <br>- You can check this in powershell ```Start-Process "tel:18000000000"``` 
   <br>- If this does not open Microsoft Teams then you need to set Teams as the default app. 
